@@ -1,0 +1,11 @@
+def code(s):
+    s=s.split('*')
+    print(s)
+    a=s[0]
+    b=s[1]
+    new=""
+    for i,j in zip(a,b):
+        new+=i+j
+    new+= a[len(b):]+b[len(a):]
+    return new
+code('aaa*bbb')
